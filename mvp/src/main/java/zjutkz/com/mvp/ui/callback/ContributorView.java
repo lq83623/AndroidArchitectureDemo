@@ -13,6 +13,8 @@ public interface ContributorView extends MvpView {
     void onLoadContributorStart();
 
     void onLoadContributorComplete(Contributor topContributor);
+    
+    void onLoadContributorError(String error);
 
     void onChangeContributorName(String name);
 }
