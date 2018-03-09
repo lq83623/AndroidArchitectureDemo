@@ -52,6 +52,12 @@ public class MainActivity extends MvpActivity<ContributorView,ContributorPresent
 
         dismissProgress();
     }
+    
+    @Override
+    public void onLoadContributorError(String error) {
+        topContributor.setText(error);
+        dismissProgress();
+    }
 
     @Override
     public void onChangeContributorName(String name) {
